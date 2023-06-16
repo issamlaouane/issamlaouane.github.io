@@ -20,34 +20,53 @@
 /* Styles pour les sections et les éléments */
 #header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 20px;
   background-color: #f5f5f5;
 }
 
 #header img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  border-radius: 20%;
 }
 
 #header .personal-info {
-  margin-left: 20px;
+  justify-self: flex-start;
+}
+
+/* Nouveaux styles pour centrer les éléments de la deuxième colonne */
+#experiences td.align-right {
+  text-align: right;
 }
 
 #experiences {
   background-color: #f9f9f9;
   padding: 20px;
+  overflow-x: auto; /* Ajout de la propriété overflow-x pour la gestion des petits écrans */
 }
 
+/* Styles pour aligner les éléments de gauche et de droite */
 #experiences table {
   border-collapse: collapse;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  /*max-width: 800px;*/
 }
 
-#experiences th,
 #experiences td {
-  padding: 10px;
+  text-align: right;
+  white-space: nowrap; /* Ajout de white-space: nowrap pour empêcher le texte de se retourner à la ligne */
+}
+
+/* Nouvelle classe pour aligner la colonne de gauche à gauche */
+#experiences td.align-left {
+  text-align: left;
+}
+
+/* Nouvelle classe pour aligner la colonne de droite à droite */
+#experiences td.align-right {
+  text-align: right;
 }
 
 #experiences th {
@@ -58,6 +77,14 @@
   background-color: #e5e5e5;
 }
 
+#experiences td.align-right {
+  text-align: right;
+}
+
+#experiences td.align-center {
+  text-align: center;
+}
+
 #skills {
   padding: 20px;
 }
@@ -65,4 +92,16 @@
 #education {
   background-color: #f9f9f9;
   padding: 20px;
+}
+
+@media screen and (min-width: 769px) {
+  #experiences table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
+
+  #experiences td:nth-child(2) {
+    text-align: left;
+  }
 }
