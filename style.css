@@ -35,8 +35,8 @@
 }
 
 /* Nouveaux styles pour centrer les éléments de la deuxième colonne */
-#experiences td.align-right {
-  text-align: right;
+#experiences td.align-left {
+  text-align: left;
 }
 
 #experiences {
@@ -55,17 +55,7 @@
 }
 
 #experiences td {
-  text-align: right;
-}
-
-/* Nouvelle classe pour aligner la colonne de gauche à gauche */
-#experiences td.align-left {
   text-align: left;
-}
-
-/* Nouvelle classe pour aligner la colonne de droite à droite */
-#experiences td.align-right {
-  text-align: right;
 }
 
 #experiences th {
@@ -74,10 +64,6 @@
 
 #experiences tr:nth-child(even) {
   background-color: #e5e5e5;
-}
-
-#experiences td.align-right {
-  text-align: right;
 }
 
 #experiences td.align-center {
