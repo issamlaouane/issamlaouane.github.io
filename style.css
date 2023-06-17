@@ -18,6 +18,14 @@
 }
  */
 /* Styles pour les sections et les éléments */
+
+.container {
+  position: relative;
+  width:100%;
+  max-height: 500px;
+  background: #e2b33b;
+}
+
 #header {
   display: flex;
   justify-content: space-between;
@@ -27,7 +35,9 @@
 }
 
 #header img {
-  border-radius: 20%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  
 }
 
 #header .personal-info {
@@ -39,24 +49,31 @@
   text-align: left;
 }
 
+#experiences td.align-center {
+  text-align: center;
+}
+
 #experiences {
   background-color: #f9f9f9;
   padding: 20px;
   overflow-x: auto; /* Ajout de la propriété overflow-x pour la gestion des petits écrans */
-}
+  width:auto;
+  margin: 0 auto; /* Centre horizontalement */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;}
 
 /* Styles pour aligner les éléments de gauche et de droite */
 #experiences table {
   border-collapse: collapse;
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
   /*max-width: 800px;*/
 }
 
-#experiences td {
-  text-align: left;
-}
 
 #experiences th {
   background-color: #f5f5f5;
@@ -66,12 +83,13 @@
   background-color: #e5e5e5;
 }
 
-#experiences td.align-center {
-  text-align: center;
-}
-
 #skills {
   padding: 20px;
+}
+
+#skills h2 {
+  align-items: center;
+  text-align: center;
 }
 
 #education {
@@ -79,14 +97,12 @@
   padding: 20px;
 }
 
-@media screen and (min-width: 769px) {
-  #experiences table {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-  }
+#education h2 {
+  align-items: center;
+  text-align: center;
+}
 
-  #experiences td:nth-child(2) {
-    text-align: left;
-  }
+.personal-info p {
+  margin-top: 5px;
+  margin-bottom: 0; 
 }
