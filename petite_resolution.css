@@ -9,10 +9,3 @@
     text-align: left;
   }
 }
-
-@media screen and (min-width: 769px) {
-  #experiences table {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
