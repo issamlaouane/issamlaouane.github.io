@@ -1,11 +1,4 @@
 /* Styles pour la responsivité */
-@media screen and (max-width: 768px) {
-  #experiences table {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
   #experiences td:nth-child(2) {
     text-align: left;
   }
-}
