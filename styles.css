@@ -7,7 +7,11 @@
 	 /* Modifie la couleur des icônes en rouge (#FF0000) */
   }
 
-
+@media (max-width: 600px) {
+  .p.about-pro {
+    font-size:7px;
+  }
+}
   .larger-icone i {
     font-size: 25px;
   }
