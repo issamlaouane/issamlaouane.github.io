@@ -8,16 +8,9 @@
   }
 
 @media (max-width: 1200px) {
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .content span {
-    display: block;
-    margin-bottom: 10px;
-  }
+.small4smallmedia {
+	font-size: 7px;
+}
 }
 
   .larger-icone i {
