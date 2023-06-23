@@ -24,13 +24,6 @@
   }
 }
 
-
-.dancing{
-	color:#FFFFFF;
-	font-weight: 900;	
-}
-
-
   .larger-icone i {
     font-size: 25px;
   }
@@ -141,14 +134,14 @@ a:hover {
 .hero-section .dancing{
     font-family: 'Dancing Script', cursive;
   letter-spacing: 1px;
-  color: #866BAF;
+  color: #FFFFFF;
   font-size: 26px;
   line-height: 1;
   font-weight: 900;
 }
 @media screen and (max-width: 580px){
   .hero-section .dancing{
-    font-size: 24px;
+    font-size: 26px;
   }
 }
 .hero-section p{
@@ -309,7 +302,7 @@ body.about-on .about-section {
 .about-section p span {
     font-family: 'Dancing Script', cursive;
   letter-spacing: 1px;
-  color: #866BAF;
+  color: #ffffff;
   font-size: 25px;
   font-weight: 400;
 }
