@@ -7,7 +7,7 @@
 	 /* Modifie la couleur des icônes en rouge (#FF0000) */
   }
 
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
 .small4smallmedia {
 	font-size: 0.75em;
 }
