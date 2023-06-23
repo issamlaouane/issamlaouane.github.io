@@ -3,6 +3,11 @@
 div.col-12.text-center.aboutname p span {
 	color: #6f42c1;
   }
+
+p.about-pro a {
+font-size: 1em;
+
+}
   .icon i {
     color: #866BAF;
 	margin-right: 8px;
