@@ -11,7 +11,22 @@
 .small4smallmedia {
 	font-size: 0.75em;
 }
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .content span {
+    display: block;
+    margin-bottom: 10px;
+  }
 }
+
+
+
+
 
   .larger-icone i {
     font-size: 25px;
