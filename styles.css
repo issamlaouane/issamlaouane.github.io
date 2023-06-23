@@ -126,7 +126,7 @@ a:hover {
   transform-origin: center top;
 }
 .hero-section h1{
-    color: #fff;
+    color: #9733fbd8;
   font-size: 5vw;
   line-height: 1;
   font-weight: 900;
@@ -136,7 +136,7 @@ a:hover {
   letter-spacing: 1px;
   color: #FFFFFF;
   font-size: 26px;
-  line-height: 1;
+  line-height: 1.5;
   font-weight: 900;
 }
 @media screen and (max-width: 580px){
