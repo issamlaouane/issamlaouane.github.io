@@ -284,7 +284,7 @@ body.about-on .about-section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 36px 36px;
-  background-image: url('http://www.ivang-design.com/svg-load/portfolio/close.svg');
+  background-image: url('img/icone.jpg');
   cursor: pointer;
   z-index: 11;
 }
@@ -385,7 +385,7 @@ body.contact-on .contact-section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 36px 36px;
-  background-image: url('http://www.ivang-design.com/svg-load/portfolio/close.svg');
+  background-image: url('img/icone.jpg');
   cursor: pointer;
   z-index: 11;
 }
@@ -452,7 +452,7 @@ body.contact-on .contact-section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 36px 36px;
-  background-image: url('http://www.ivang-design.com/svg-load/portfolio/close.svg');
+  background-image: url('img/icone.jpg');
   cursor: pointer;
   z-index: 11;
 }
