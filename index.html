@@ -10,7 +10,7 @@
  <title>Issam LAOUANE - CV - Portfolio</title>  
 </head>
 
-<body>
+<body onload="afficherDate()">
     <div class="hero-section">  
         <div class="about-text hover-target">À propos de moi</div>
         <div class="contact-text hover-target">Contactez-moi</div>
@@ -26,8 +26,9 @@
               <div class="col-12 text-center mt-4 mt-lg-5">
                 <p class="content">
                   <span class="travel hover-target">Formation</span> 
-                  <span class="wildlife hover-target">Compétences<br>& Outils<br>Numériques</span> 
+                  <span class="wildlife hover-target">Skills</span> 
                   <span class="nature hover-target">Expériences</span>
+                  <span class="projet hover-target">Projets</span>                  
                 </p>
               </div>
             </div>
@@ -111,6 +112,7 @@
         </div>
       </div>
       
+
       <div class="wildlife-section">  
         <div class="wildlife-close hover-target"></div>
         <div class="container">
@@ -146,6 +148,80 @@
         </div>
       </div>
       
+
+
+      <div class="projet-section">  
+        <div class="projet-close hover-target"></div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 text-center">
+              <h3>Projets personnels</h3>
+            </div>
+            <div class="col-12">
+              <p><br><br> <span> Analyse des données de ventes en ligne, détection de saisonnalité</span></p>
+            </div>
+            <div class="col-12">
+              <p class="about-pro">
+                Je reviens vers vous concernant votre candidature au poste de stagiaire data
+                scientist au sein de notre entreprise ~~SublimeSkinz~~. Nous vous proposons de passer
+                à l'étape suivante de notre processus de recrutement au travers un test technique
+                que vous devez réaliser chez vous avant le dimanche 8 avril.<br> Le délai normal est
+                d'une semaine. <br> 
+                Cet exercice a pour objectif d'évaluer vos compétences en data science. Vous serez
+                évalués selon 4 axes :  <br>
+                ● Statistiques Descriptives  <br>
+                ● Machine Learning  <br>
+                ● Interprétation et restitution des résultats  <br>
+                ● Qualité et clarté du code  <br>
+                Vous trouverez dans ce jeu de données les informations concernant la vente de
+                rollers heure par heure sur une période donnée.  <br>
+                Voici les variables disponibles :  <br>
+                datetime : date et heure du relevé  <br>
+                season : 1 = printemps , 2 = été, 3 = automne, 4 = hiver  <br>
+                holiday : indique si le jour est un jour de vacances scolaires  <br>
+                workingday : indique si le jour est travaillé (ni weekend ni vacances)  <br>
+                weather : 1: Dégagé à nuageux, 2 : Brouillard, 3 : Légère pluie ou neige, 4 : Fortes
+                averses ou neige  <br>
+                temp : température en degrés Celsius  <br>
+                atemp : température ressentie en degrés Celsius  <br>
+                humidity : taux d'humidité  <br>
+                windspeed : vitesse du vent  <br>
+                casual : nombre de ventes d'usagers non abonnés  <br>
+                registered : nombre de ventes d'usagers abonnés  <br>
+                count : nombre total de ventes de rollers  <br>
+                Dans une premier temps vous devrez réaliser une étude statistique afin de définir
+                certaines tendances ainsi que de faire ressortir certains comportements, vous
+                définirez les facteurs qui semblent influencer la demande en rollers (graphiques,
+                interprétations). Dans un second temps, vous prédirez le nombre total de rollers
+                vendus pour chacune des heures du jeu de données test fourni. Vous devez utiliser
+                le langage Python, et vous fournirez votre code commenté en intégralité ainsi que le
+                résultat détaillé de vos analyses au travers d'un repository bitbucket dont vous nous
+                fournirez le lien. Vous pouvez également fournir un pdf, ou notebook accompagné
+                des scripts python.  <br>
+                Vous trouverez ci-joint :  <br>
+                - dataset_train.csv  <br>
+                - dataset_test.csv  <br>
+                Si vous avez le moindre problème avec le jeu de données ou des questions,
+                n'hésitez surtout pas à me contacter.  <br><br>
+                Cordialement.  
+                
+              </p>
+            </div>
+            <hr>
+            <div class="col-12">
+              <p><br><br> <span> Ma solution pas à pas ..</span></p>
+            </div>
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+      
       <div class="nature-section">  
         <div class="nature-close hover-target"></div>
         <div class="container">
@@ -165,7 +241,19 @@
            
 
 
-           
+          <div class="col-12 mt-3">
+            <p class="about-pro">Data Engineer<span>MC2i</span><br> Aout 2021 - à ce jour le  <span id="dateVisite"></span></p>
+           </div>
+           <div class="col-12">
+             <ul class="about-pro">
+               <li>Analyse des besoins client</li>
+               <li>Proposition et conception d'outils adéquats</li>
+               <li>Paramétrage des outils conçus</li>
+               <li>Tests et validation</li>
+               <li>Formation et documentation</li>
+             </ul>
+           </div>
+           <hr>
             <div class="col-12 mt-3">
               <p class="about-pro">Administrateur des <span>systèmes de gestion des données</span><br>Lavnet - Paris 18<br>Aout 2020 - Juin 2021</p>
             </div>
@@ -201,19 +289,8 @@
                 <li>Optimisation des performances</li>
               </ul>
             </div>
-           <hr>
-            <div class="col-12 mt-3">
-             <p class="about-pro"><span>texettexte</span><br> Aout 2019 - Juin 2021</p>
-            </div>
-            <div class="col-12">
-              <ul class="about-pro">
-                <li>llllllllllllllllllllllllllllllllllllllm</li>
-                <li>ffffffffffffffffffffffffffffffffffff</li>
-                <li>fffffffffffffffff</li>
-                ffffffffffffffffffffffff
-              </ul>
-            </div>
-         
+
+
           </div>
         </div>
       </div>
