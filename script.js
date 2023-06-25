@@ -1,4 +1,26 @@
 /* Please ❤ this if you like it! */
+
+ // Fonction pour afficher la date actuelle
+ function afficherDate() {
+  // Créer un nouvel objet de date
+  var date = new Date();
+  
+  // Récupérer les composants de la date
+  var jour = date.getDate();
+  var mois = date.getMonth() + 1; // Les mois commencent à partir de zéro
+  var annee = date.getFullYear();
+       // Tableau des noms des mois en français
+       var moisFrancais = [
+        "janvier", "février", "mars", "avril", "mai", "juin",
+        "juillet", "août", "septembre", "octobre", "novembre", "décembre"
+      ];
+  // Formater la date comme "jj/mm/aaaa"
+  var dateFormatee = jour + ' ' + moisFrancais[mois] + ' ' + annee;
+  
+  // Afficher la date dans l'élément avec l'ID "dateVisite"
+  document.getElementById('dateVisite').textContent = dateFormatee;
+}
+
 !function(G, Za) {
   "object" == typeof module && "object" == typeof module.exports ? module.exports = G.document ? Za(G, !0) : function($a) {
     if (!$a.document) {
@@ -3087,5 +3109,13 @@
 
   $(".nature-close").on('click', function() {
     $("body").removeClass("nature-on");
+  });
+   // projet portfolio page
+   $(".projet").on('click', function() {
+    $("body").addClass("projet-on");
+  });
+
+  $(".projet-close").on('click', function() {
+    $("body").removeClass("projet-on");
   });
 })(jQuery);
