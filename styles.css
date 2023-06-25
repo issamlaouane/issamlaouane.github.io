@@ -11,6 +11,11 @@ margin-bottom: 5px;
 border-width: 2px ;
 border-color: green ;
 }
+
+div.col-12.text-center.mt-4.mt-lg-5 p span {
+	font-size:1.65em;
+}
+
 div.col-12.text-center.aboutname p span {
 	color: #6f42c1;
   }
