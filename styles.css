@@ -8,6 +8,21 @@ div.projet-section div.hero-section {
 	top:0;
 	left:0
 }
+
+	div.projet-close.hover-target {
+		z-index : 1;
+	}
+
+	div.projet1-close.hover-target {
+		z-index : 12;
+	}
+
+	div.projet2-close.hover-target {
+		z-index : 11;
+	}
+
+
+
 hr {
 width: 50%;
 height: 5px;
