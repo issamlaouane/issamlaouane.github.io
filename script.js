@@ -3110,6 +3110,7 @@
   $(".nature-close").on('click', function() {
     $("body").removeClass("nature-on");
   });
+ 
    // projet portfolio page
    $(".projet").on('click', function() {
     $("body").addClass("projet-on");
@@ -3118,6 +3119,7 @@
   $(".projet-close").on('click', function() {
     $("body").removeClass("projet-on");
   });
+ 
   // projet1 portfolio page
   $(".projet1").on('click', function() {
     $("body").addClass("projet1-on");
@@ -3126,6 +3128,7 @@
   $(".projet1-close").on('click', function() {
     $("body").removeClass("projet1-on");
   });
+ 
   // projet2 portfolio page
   $(".projet2").on('click', function() {
     $("body").addClass("projet2-on");
