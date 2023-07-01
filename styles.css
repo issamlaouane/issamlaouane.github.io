@@ -1,6 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700,800,800i,900,900i');
 
+
+
+
+div.about-section {
+	overflow: auto;
+
+}
+
+
+/*la photo de profile zone about me*/
+div.section-center div.container div.col-12 div.col-12.text-center img {
+	
+	border-top-right-radius: 50%; 
+	border-bottom-left-radius:  50%; 
+}
+
 div.container-fluid div.row.justify-content-center div.col-12.text-center h1 {
 	color:#5f12ed;}
 div.projet-section div.hero-section {
@@ -335,11 +351,8 @@ body.about-on .about-section {
   z-index: 11;
 }
 .section-center {
-    position: absolute;
-  width: 100%;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+    width: 90%; /* Ajustez la largeur selon vos besoins */
+  height: auto;
   z-index: 1;
 }
 .about-section img {
