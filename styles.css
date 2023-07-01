@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700,800,800i,900,900i');
 
 
-
+div.hero-section {
+	overflow: auto;
+}
 
 div.about-section {
 	overflow: auto;
