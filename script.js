@@ -27,8 +27,8 @@
 
 
 // Calcul du nombre d'années, de mois et de jours
-var ans = Math.floor(jours / 365);
-var resteJours = jours % 365;
+var ans = Math.floor(jours / 365,2422);
+var resteJours = jours % 366;
 var mois = Math.floor(resteJours / 30);
 var jours = resteJours % 30;
 var differenceDates = ans + " ans, " + mois + " mois et " + jours + " jours";
