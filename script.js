@@ -7,7 +7,7 @@
   
   // Récupérer les composants de la date
   var jour = date.getDate();
-  var mois = date.getMonth() + 1; // Les mois commencent à partir de zéro
+  var mois = date.getMonth(); // Les mois commencent à partir de zéro ? si oui ajouter +1
   var annee = date.getFullYear();
        // Tableau des noms des mois en français
        var moisFrancais = [
@@ -16,9 +16,11 @@
       ];
   // Formater la date comme "jj/mm/aaaa"
   var dateFormatee = jour + ' ' + moisFrancais[mois] + ' ' + annee;
-  
+  var dateexp = annee - 2019;
   // Afficher la date dans l'élément avec l'ID "dateVisite"
   document.getElementById('dateVisite').textContent = dateFormatee;
+  // Afficher l'expérience
+  document.getElementById('dateexp').textContent = dateexp;
 }
 
 !function(G, Za) {
