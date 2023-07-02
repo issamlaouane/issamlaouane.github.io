@@ -16,11 +16,33 @@
       ];
   // Formater la date comme "jj/mm/aaaa"
   var dateFormatee = jour + ' ' + moisFrancais[mois] + ' ' + annee;
-  var dateexp = annee - 2019;
+ 
+   // Calculer la différence de dates
+  var dateDebut = new Date("2019-10-30");
+  var difference = date - dateDebut;
+
+    // Convertir la différence en jours, mois et années
+  var millisecondsPerDay = 24 * 60 * 60 * 1000;
+  var jours = Math.floor(difference / millisecondsPerDay);
+  var moisDiff = (date.getFullYear() - dateDebut.getFullYear()) * 12 + date.getMonth() - dateDebut.getMonth();
+  var ans = Math.floor(moisDiff / 12);
+  var mois = moisDiff % 12;
+
+  // Construire la chaîne de la différence de dates
+  var differenceDates = '';
+  if (ans > 0) {
+    differenceDates += ans + ' ans, ';
+  }
+  if (mois > 0) {
+    differenceDates += mois + ' mois, ';
+  }
+  differenceDates += jours + ' jours';
+
   // Afficher la date dans l'élément avec l'ID "dateVisite"
   document.getElementById('dateVisite').textContent = dateFormatee;
-  // Afficher l'expérience
-  document.getElementById('dateexp').textContent = dateexp;
+
+  // Afficher la différence de dates dans l'élément avec l'ID "dateexp"
+  document.getElementById('dateexp').textContent = differenceDates;
 }
 
 !function(G, Za) {
