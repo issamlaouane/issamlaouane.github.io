@@ -22,13 +22,13 @@
   var difference = date - dateDebut;
 
     // Convertir la différence en jours, mois et années
-  var minutesPerDay = 24 * 60 * 60 * 1000;
+  var minutesPerDay = 24 * 60 * 60 * 1000; // millisecondes pas minutes
   var jours = Math.floor(difference / minutesPerDay);
 
 
 // Calcul du nombre d'années, de mois et de jours
-var ans = Math.floor(differenceEnJours / 365);
-var resteJours = differenceEnJours % 365;
+var ans = Math.floor(jours / 365);
+var resteJours = jours % 365;
 var mois = Math.floor(resteJours / 30);
 var jours = resteJours % 30;
 var differenceDates = ans + " ans, " + mois + " mois et " + jours + " jours";
