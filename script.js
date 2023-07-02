@@ -15,7 +15,7 @@
         "juillet", "août", "septembre", "octobre", "novembre", "décembre"
       ];
   // Formater la date comme "jj/mm/aaaa"
-  var dateFormatee = jour + ' ' + moisFrancais[mois] + ' ' + annee;
+  var dateFormatee = ' ' + jour + ' ' + moisFrancais[mois] + ' ' + annee + ' ';
  
    // Calculer la différence de dates
   var dateDebut = new Date("2019-10-30");
