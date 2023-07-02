@@ -31,7 +31,7 @@ var ans = Math.floor(jours / 365,2422);
 var resteJours = jours % 366;
 var mois = Math.floor(resteJours / 30);
 var jours = resteJours % 30;
-var differenceDates = ans + " ans, " + mois + " mois et " + jours + " jours";
+var differenceDates = ' ' + ans + " ans et " + mois + " mois ";
 
   // Afficher la date dans l'élément avec l'ID "dateVisite"
   document.getElementById('dateVisite').textContent = dateFormatee;
