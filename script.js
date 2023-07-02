@@ -22,21 +22,16 @@
   var difference = date - dateDebut;
 
     // Convertir la différence en jours, mois et années
-  var millisecondsPerDay = 24 * 60 * 60 * 1000;
-  var jours = Math.floor(difference / millisecondsPerDay);
-  var moisDiff = (date.getFullYear() - dateDebut.getFullYear()) * 12 + date.getMonth() - dateDebut.getMonth();
-  var ans = Math.floor(moisDiff / 12);
-  var mois = moisDiff % 12;
+  var minutesPerDay = 24 * 60 * 60 * 1000;
+  var jours = Math.floor(difference / minutesPerDay);
 
-  // Construire la chaîne de la différence de dates
-  var differenceDates = '';
-  if (ans > 0) {
-    differenceDates += ans + ' ans, ';
-  }
-  if (mois > 0) {
-    differenceDates += mois + ' mois, ';
-  }
-  differenceDates += jours + ' jours';
+
+// Calcul du nombre d'années, de mois et de jours
+var ans = Math.floor(differenceEnJours / 365);
+var resteJours = differenceEnJours % 365;
+var mois = Math.floor(resteJours / 30);
+var jours = resteJours % 30;
+var differenceDates = ans + " ans, " + mois + " mois et " + jours + " jours";
 
   // Afficher la date dans l'élément avec l'ID "dateVisite"
   document.getElementById('dateVisite').textContent = dateFormatee;
