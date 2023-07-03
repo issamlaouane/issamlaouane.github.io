@@ -353,12 +353,12 @@ body.about-on .about-section {
   z-index: 11;
 }
 .section-center {
-    width: 90%; /* Ajustez la largeur selon vos besoins */
+  width: 100%; /* Ajustez la largeur selon vos besoins */
   height: auto;
   z-index: 1;
 }
 .about-section img {
-    width: 100px;
+  width: 100px;
   height: 100px;
   border-radius: 4px;
   display: block;
@@ -366,7 +366,7 @@ body.about-on .about-section {
   box-shadow: 0 0 20px rgba(0,0,0,0.15);
 }
 .about-section p span {
-    font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script', cursive;
   letter-spacing: 1px;
   color: #ffffff;
   font-size: 25px;
