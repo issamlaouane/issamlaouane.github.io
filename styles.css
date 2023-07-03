@@ -205,10 +205,14 @@ spécifique et ont une transition fluide lors de changements de style.*/
   transform-origin: center top;
 }
 .hero-section h1{
-    color: #9733fba3;
+    background-image: linear-gradient(to right, #a79d9d, #000000);
+  -webkit-background-clip: text; /* pour la prise en charge de WebKit (Chrome, Safari) */
+  -webkit-text-fill-color: transparent; /* pour la prise en charge de WebKit (Chrome, Safari) */
+  background-clip: text;
+  color: transparent;
   font-size: 3em;
   line-height: 1;
-  font-weight: 900;
+  font-weight: 800;
 }
 .hero-section .dancing{
     font-family: 'Dancing Script', cursive;
