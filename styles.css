@@ -295,7 +295,11 @@ body.projet1-on .hero-section {
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
-  color: #fff;
+  background-image: linear-gradient(to right, #a79d9d, #CDBCBC);
+  -webkit-background-clip: text; /* pour la prise en charge de WebKit (Chrome, Safari) */
+  -webkit-text-fill-color: transparent; /* pour la prise en charge de WebKit (Chrome, Safari) */
+  background-clip: text;
+  color: transparent;
   letter-spacing: 2px;
   top: 50%;
   left: 40px;
@@ -390,7 +394,11 @@ body.about-on .about-section {
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
-  color: #fff;
+  background-image: linear-gradient(to right, #a79d9d, #CDBCBC);
+  -webkit-background-clip: text; /* pour la prise en charge de WebKit (Chrome, Safari) */
+  -webkit-text-fill-color: transparent; /* pour la prise en charge de WebKit (Chrome, Safari) */
+  background-clip: text;
+  color: transparent;
   letter-spacing: 2px;
   top: 50%;
   right: 40px;
