@@ -263,7 +263,7 @@ spécifique et ont une transition fluide lors de changements de style.*/
   background-position: center;
   background-size: 30px 30px;
   background-image: url('http://www.ivang-design.com/svg-load/portfolio/down.svg');
-  opacity: 1;
+  opacity: 2;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
