@@ -399,7 +399,7 @@ body.about-on .about-section {
   -webkit-background-clip: text; /* pour la prise en charge de WebKit (Chrome, Safari) */
   -webkit-text-fill-color: transparent; /* pour la prise en charge de WebKit (Chrome, Safari) */
   background-clip: text;
-  color: transparent;}
+  color: transparent;
   letter-spacing: 2px;
   top: 50%;
   right: 40px;
