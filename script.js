@@ -3157,5 +3157,15 @@ var differenceDates = ' ' + ans + " ans et " + mois + " mois ";
     $("body").removeClass("projet2-on");
   });
 
+  // projet3 portfolio page
+  $(".proje3").on('click', function() {
+    $("body").addClass("projet3-on");
+  });
+
+  $(".projet3-close").on('click', function() {
+    $("body").removeClass("projet3-on");
+  });
+
+
 
 })(jQuery);
