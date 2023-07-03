@@ -19,8 +19,7 @@ div.section-center div.container div.col-12 div.col-12.text-center img {
 	border-bottom-left-radius:  50%; 
 }
 
-div.container-fluid div.row.justify-content-center div.col-12.text-center h1 {
-	color:#a5aae8;}
+
 div.projet-section div.hero-section {
 	position: absolute;
 	top:0;
@@ -217,7 +216,11 @@ spécifique et ont une transition fluide lors de changements de style.*/
 .hero-section .dancing{
     font-family: 'Dancing Script', cursive;
   letter-spacing: 1px;
-  color: #FFFFFF;
+      background-image: linear-gradient(to right, #000000 , #a79d9d);
+  -webkit-background-clip: text; /* pour la prise en charge de WebKit (Chrome, Safari) */
+  -webkit-text-fill-color: transparent; /* pour la prise en charge de WebKit (Chrome, Safari) */
+  background-clip: text;
+  color: transparent;
   font-size: 26px;
   line-height: 1.5;
   font-weight: 900;
