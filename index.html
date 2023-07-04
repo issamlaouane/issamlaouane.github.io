@@ -331,30 +331,30 @@
                          Le problème du traitement en Batch, c'est qu'il est plutôt lent, car il s'agit de traiter de très gros volumes de données d'un coup. Ce n'est donc pas adapté si on veut transformer les données de manière rapide.  <br>  <br>                   
                          Outils    <br><br>
                          
-                         Apache Airflow + snowflake
-                         PREFECT + Amazon Redshift
-                         Apache Sparke + Amazon Redshift + Apache Airflow                       
+                         Apache Airflow + snowflake<br>
+                         PREFECT + Amazon Redshift<br>
+                         Apache Sparke + Amazon Redshift + Apache Airflow     <br><br>                  
                          
-                         Traitment en streaming
-                         Microbatchs
+                         <span>Traitment en streaming - Microbatchs </span><br><br>
                       </p>
                       <div class="col-12">
                          <img src="img/stream.jpg" alt="issam LAOUANE data analyst">
                       </div>
                       <p class="about-pro">
                          <br>
-                         C'est le traitement de données en lots, le but est de prendre des données en grande quantités d'un point A à un point B, ça permet de traiter des grands volumes de données en incrémental et avec toute logique d'Idempotence. <br>
-                         Le processing et le traitement se fait toutes les heures ou toutes les 12h, 24h c'est généralement dans ces ordres de pattern qu'on va appliquer le traitement en Batch.<br><br>
-                         Le problème du traitement en Batch, c'est qu'il est plutôt lent, car il s'agit de traiter de très gros volumes de données d'un coup. Ce n'est donc pas adapté si on veut transformer les données de manière rapide.  <br>  <br>                   
-                         Outils    <br><br>
-                         
-                         Apache Airflow + snowflake
-                         PREFECT + Amazon Redshift
-                         Apache Sparke + Amazon Redshift + Apache Airflow                       
-                         
-                         Traitment en streaming
-                         Microbatchs
+                         C'est un pattern qui va être utilisé pour traiter des gros volumes de données mais en petits morceaux, on rassemble les données en micro batchs, de manière scalable, et pour réduire le temps de traitement au lieu d'avoir un batch toutes les heures ou 24h ça sera par exemple toutes les minutes.<br><br>
+                         Apache Spark streaming microbatch<br><br>
+                         <span>Traitment en streaming - "temps réel" </span><br><br>
                       </p>
+                      <div class="col-12">
+                         <img src="img/stream2.jpg" alt="issam LAOUANE data analyst">
+                      </div>
+                      <p class="about-pro">
+                         <br><br>
+                         C'est un pattern où l'on va traiter les données enregistrement par enregistrement.<br><br>
+                         Kafka ou Apache STORM ou Apache Flinck<br><br>
+                      </p>
+                      
                   </div>
               </div>
           </div>
