@@ -3158,7 +3158,7 @@ var differenceDates = ' ' + ans + " ans et " + mois + " mois ";
   });
 
   // projet3 portfolio page
-  $(".proje3").on('click', function() {
+  $(".projet3").on('click', function() {
     $("body").addClass("projet3-on");
   });
 
