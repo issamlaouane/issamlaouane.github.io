@@ -330,12 +330,12 @@
                          Le processing et le traitement se fait toutes les heures ou toutes les 12h, 24h c'est généralement dans ces ordres de pattern qu'on va appliquer le traitement en Batch.<br><br>
                          Le problème du traitement en Batch, c'est qu'il est plutôt lent, car il s'agit de traiter de très gros volumes de données d'un coup. Ce n'est donc pas adapté si on veut transformer les données de manière rapide.  <br>  <br>                   
                          Outils    <br><br>
-                         
                          Apache Airflow + snowflake<br>
                          PREFECT + Amazon Redshift<br>
                          Apache Sparke + Amazon Redshift + Apache Airflow     <br><br>                  
                          
                          <span>Traitment en streaming - Microbatchs </span><br><br>
+                       
                       </p>
                       <div class="col-12">
                          <img src="img/stream.jpg" alt="issam LAOUANE data analyst">
@@ -344,7 +344,9 @@
                          <br>
                          C'est un pattern qui va être utilisé pour traiter des gros volumes de données mais en petits morceaux, on rassemble les données en micro batchs, de manière scalable, et pour réduire le temps de traitement au lieu d'avoir un batch toutes les heures ou 24h ça sera par exemple toutes les minutes.<br><br>
                          Apache Spark streaming microbatch<br><br>
-                         <span>Traitment en streaming - "temps réel" </span><br><br>
+                       
+                         <span>Traitment en streaming - Presque temps réel </span><br><br>
+                       
                       </p>
                       <div class="col-12">
                          <img src="img/stream2.jpg" alt="issam LAOUANE data analyst">
@@ -354,7 +356,45 @@
                          C'est un pattern où l'on va traiter les données enregistrement par enregistrement.<br><br>
                          Kafka ou Apache STORM ou Apache Flinck<br><br>
                       </p>
+                       <span>Kappa Architecture</span><br><br>
+                   
+                      <div class="col-12">
+                         <img src="img/kappa.jpg" alt="issam LAOUANE data analyst">
+                      </div>
+
+                      <p class="about-pro">La Kappa Architecture est un modèle d'architecture de traitement des flux de données en temps réel. Elle a été proposée
+                       par<span> Jay Kreps, </span>l'un des créateurs d'Apache Kafka.<br>
+                       Le principal principe de la Kappa Architecture est d'utiliser un système de streaming pour traiter les données en temps réel de manière 
+                       continue, sans distinction entre les flux entrants et les données historiques. Cela permet de simplifier l'architecture en éliminant 
+                       la nécessité d'un système de traitement distinct pour les données en temps réel et les données historiques. Les données sont ingérées
+                       dans un flux continu, puis elles sont traitées de manière uniforme à mesure qu'elles arrivent.
+                       Il y a 3 couches l'architecture Kappa toutes en streaming temps réel, une première pour Ingérer, une deuxième pour Transformer et une troisième couche de service<br><br>
                       
+                       
+                       
+                       
+                       <span>Lambda Architecture</span><br><br>
+                      </p>
+                      <div class="col-12">
+                         <img src="img/lambda.jpg" alt="issam LAOUANE data analyst">
+                      </div>
+                      <p class="about-pro"> La Lambda Architecture est un modèle d'architecture de traitement des données qui combine le traitement en stream temps réel 
+                       et le traitement en batch temps différé pour fournir une vue complète des données.<br> 
+                       Elle a été proposée par</span> Nathan Marz. </span>La Lambda Architecture repose sur la notion de deux voies parallèles de traitement des données : 
+                       une voie en temps réel et une voie en temps différé. Les données sont ingérées simultanément dans les deux voies. La voie en temps réel 
+                       est utilisée pour le traitement en continu des données en temps réel, tandis que la voie en temps différé est utilisée pour le traitement 
+                       batch des données historiques. Les résultats des deux voies sont ensuite fusionnés pour obtenir une vue complète des données
+                     c'est le croisement entre le traitement en batch et la traitement streaming, cad qu'on va traiter à la fois les données en streaming et à la fois en batch.
+                   et ça se divisé en 3 parties. La première c'est la couche batch la ou on va recuoerer 
+                   les données, les transformer en batch et les stocker, la 2 eme couche est streaming, 
+                   on va récupérer les données en temps réel, les transformer et les afficher en temps 
+                   réel. la 3eme couche qui est la couche de présentation ou de service qui permet de 
+                   fusiioner les 2 approches, données en streaming et en batch, donc finalement cette 
+                   couche de présentation va permettre de consolider la partie batch et la partie 
+                   streaming pour avoir des résultats rapides avec la couche streaming et précis avec 
+                   la couche batch  
+                  </p>
+                       
                   </div>
               </div>
           </div>
