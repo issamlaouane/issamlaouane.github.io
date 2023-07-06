@@ -638,25 +638,25 @@ body.projet1-on .projet1-section {
 
 .link-to-portfolio {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 3vh;
+    right: 3vh;
     z-index: 200;
     cursor: pointer;
-    width: 60px;
-    height: 60px;
+    width: 10vw;
+    height: 10vw;
     text-align: center;
     border-radius: 30%;
     background-position: center center;
     background-size: 75%;
   background-repeat: no-repeat;
     background-image: url('img/GH.png');
-    box-shadow: 0 0 0 2px rgba(255,255,255,.1);
+    box-shadow: 0 0 0 4px rgba(255,255,255,.1);
     transition: opacity .2s, border-radius .2s, box-shadow .2s;
     transition-timing-function: ease-out;
 }
 .link-to-portfolio:hover {
     opacity: 0.8;
-    border-radius: 50%;
+    border-radius: 30%;
     box-shadow: 0 0 0 20px rgba(255,255,255,.1);
 }
 .about-pro{
