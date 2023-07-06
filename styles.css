@@ -638,8 +638,8 @@ body.projet1-on .projet1-section {
 
 .link-to-portfolio {
     position: fixed;
-    bottom: 15vh;
-    right: 3vw;
+    bottom: 12vh;
+    right: 3vh;
     z-index: 200;
     cursor: pointer;
     width: 12vw;
