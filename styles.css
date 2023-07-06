@@ -639,7 +639,7 @@ body.projet1-on .projet1-section {
 .link-to-portfolio {
     position: fixed;
     bottom: 12vh;
-    right: 3vh;
+    right: 4vh;
     z-index: 200;
     cursor: pointer;
     width: 60px;
