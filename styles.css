@@ -26,7 +26,10 @@ div.section-center div.container div.col-12 div.col-12.text-center img.cv-photo 
 	border-top-right-radius: 50%; 
 	border-bottom-left-radius:  50%; 
 }
-
+/* Autres photos de la zone about me*/
+div.section-center div.container div.col-12 div.col-12.text-center img.photo {
+	width=80%;
+}
 
 div.projet-section div.hero-section {
 	position: absolute;
