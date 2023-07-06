@@ -28,7 +28,7 @@ div.section-center div.container div.col-12 div.col-12.text-center img.cv-photo 
 }
 /* Autres photos de la zone about me*/
 div.section-center div.container div.col-12 div.col-12.text-center img.photo {
-	width=80%;
+	width=100%;
 }
 
 div.projet-section div.hero-section {
@@ -70,7 +70,7 @@ div.col-12.text-center.mt-4.mt-lg-5 p span {
 	color:#ffffff;
 }
 
-div.col-12.text-center p.about-pro span {
+div.col-12 p.about-pro span {
 	color: #6f42c1;
   }
 div.col-12.text-center h3 {
