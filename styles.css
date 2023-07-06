@@ -21,7 +21,7 @@ div.about-section {
 
 
 /*la photo de profile zone about me*/
-div.section-center div.container div.col-12 div.col-12.text-center img {
+div.section-center div.container div.col-12 div.col-12.text-center img.cv-photo {
 	
 	border-top-right-radius: 50%; 
 	border-bottom-left-radius:  50%; 
