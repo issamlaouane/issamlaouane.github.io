@@ -82,7 +82,7 @@ div.col-12.text-center.mt-4.mt-lg-5 p span {
 }
 
 div.col-12 p.about-pro span {
-	color: #6f42c1;
+	color: #866BAF;
   }
 div.col-12.text-center h3 {
 	color: #ffffff;
@@ -105,7 +105,7 @@ font-weight: 500;
   .icon i {
     color: #866BAF;
 	margin-right: 8px;
-	 /* Modifie la couleur des icônes en rouge (#FF0000) */
+	 /* Modifie la couleur des icônes */
   }
 
 @media (max-width: 800px) {
