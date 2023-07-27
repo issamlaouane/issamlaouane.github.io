@@ -38,11 +38,7 @@ div.section-center div.container div.col-12 div.col-12 img.photo {
 	display:flex;
 	width:100%;
 }
-.section-center {
 
-  background-image: url('img/fond-home.jpg');
-  background-size: cover;
-}
 div.projet-section div.hero-section {
 	position: absolute;
 	top:0;
@@ -217,6 +213,10 @@ spécifique et ont une transition fluide lors de changements de style.*/
   }
 }
 
+.about-section .section-center {
+  background-image: url('img/fond-home.jpg');
+  background-size: cover;
+		}
 /* #Primary style
 ================================================== */
 
