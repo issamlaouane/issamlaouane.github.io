@@ -10,7 +10,6 @@ background-image: linear-gradient(to bottom, #0a120a, #1c1111);
 font-weight: 900;
 }
 
-
 div.col-12.photo img {
 	width: 100%;
 	height: auto;
@@ -666,7 +665,7 @@ body.projet1-on .projet1-section {
     background-position: center center;
     background-size: 88%;
   background-repeat: no-repeat;
-    background-image: url('img/GH.png');
+    background-image: url('img/Fiverr-Logo.png');
     box-shadow: 0 0 0 4px rgba(255,255,255,.1);
     transition: opacity .2s, border-radius .2s, box-shadow .2s;
     transition-timing-function: ease-out;
