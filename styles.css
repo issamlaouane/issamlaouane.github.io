@@ -38,7 +38,11 @@ div.section-center div.container div.col-12 div.col-12 img.photo {
 	display:flex;
 	width:100%;
 }
+.container {
 
+  background-image: url('img/fond-home.jpg');
+  background-size: cover;
+}
 div.projet-section div.hero-section {
 	position: absolute;
 	top:0;
