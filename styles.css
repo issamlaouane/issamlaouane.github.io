@@ -674,6 +674,7 @@ body.projet1-on .projet1-section {
     opacity: 0.8;
     border-radius: 30%;
     box-shadow: 0 0 0 20px rgba(255,255,255,.1);
+transform: scale(1.4);
 }
 .about-pro{
   color: whitesmoke;
