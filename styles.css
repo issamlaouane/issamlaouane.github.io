@@ -38,7 +38,7 @@ div.section-center div.container div.col-12 div.col-12 img.photo {
 	display:flex;
 	width:100%;
 }
-.container {
+.section-center {
 
   background-image: url('img/fond-home.jpg');
   background-size: cover;
