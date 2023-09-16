@@ -658,16 +658,16 @@ body.projet1-on .projet1-section {
 
 .link-to-portfolio {
     position: fixed;
-    bottom: 12vh;
-    right: 4vh;
+    bottom: calc(3vh + 3vw);
+    right: calc(3vh + 3vw);
     z-index: 200;
     cursor: pointer;
-    width: 60px;
-    height: 60px;
+    width: calc(5vh + 5vw) /*60px*/;
+    height: calc(5vh + 5vw);  
     text-align: center;
-    border-radius: 30%;
+    border-radius: 120%;
     background-position: center center;
-    background-size: 88%;
+    background-size: 150%;
   background-repeat: no-repeat;
     background-image: url('img/Fiverr-Logo.png');
     box-shadow: 0 0 0 4px rgba(255,255,255,.1);
