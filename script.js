@@ -2823,6 +2823,42 @@ var differenceDates = ' ' + ans + " ans et " + mois + " mois ";
     $("body").removeClass("projet3-on");
   });
 
+    // projet4 portfolio page
+    $(".projet4").on('click', function() {
+      $("body").addClass("projet4-on");
+    });
+  
+    $(".projet4-close").on('click', function() {
+      $("body").removeClass("projet4-on");
+    });
+  
+      // projet5 portfolio page
+  $(".projet5").on('click', function() {
+    $("body").addClass("projet5-on");
+  });
+
+  $(".projet5-close").on('click', function() {
+    $("body").removeClass("projet5-on");
+  });
+
+    // projet6 portfolio page
+    $(".projet6").on('click', function() {
+      $("body").addClass("projet6-on");
+    });
+  
+    $(".projet6-close").on('click', function() {
+      $("body").removeClass("projet6-on");
+    });
+  
+      // projet7 portfolio page
+  $(".projet7").on('click', function() {
+    $("body").addClass("projet7-on");
+  });
+
+  $(".projet7-close").on('click', function() {
+    $("body").removeClass("projet7-on");
+  });
+
 
 
 })(jQuery);
