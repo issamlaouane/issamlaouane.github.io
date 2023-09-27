@@ -214,7 +214,10 @@
                     <span class="projet2 hover-target">Reconnaissance OCR - Analyse sémantique du texte des tickets de caisse</span>    
 
                     <span class="projet1 hover-target">Analyse des ventes d'un site web - R</span> <!--travel, en bas wildlife au lieu de projet1,2-->
-
+                    <span class="projet4 hover-target">EDA - </span> 
+                    <span class="projet5 hover-target">Dashboard - Data Visualization</span> 
+                    <span class="projet6 hover-target">Collaboration Data project</span> 
+                    <span class="projet7 hover-target">Web Scraping - API - Own Data</span> 
                   </p>
                 </div>
               </div>
@@ -446,6 +449,412 @@
       </div>
       
   <!--fin projet 3 -->
+
+
+
+         <!--début projet 4 -->
+         <div class="projet4-section">  <!--wildlife-->
+          <div class="projet4-close hover-target"></div>
+          <div class="container">
+              <div class="row justify-content-center">
+                  <div class="col-12 text-center">
+                  <h3>Explory Data Analysis</h3>
+                  </div>
+                  <div class="col-12 mt-3 text-center">
+                  <p><br></p>
+                  </div>
+                  <div class="col-12">
+                      <p class="about-pro">
+                        <span>Description </span><br><br>
+                        
+                        Un design pattern est une solution standardisée, a un problème récurrent qu'on cherche à résoudre. Un design pattern est donc fait pour être réutilisé. C'est une approche éprouvée qui encapsule des principes, logique d'architectures et d'algorithmes pour résoudre un problème<br>
+                        Un data pipeline est un processus automatisé pour ingérer les flux de données, déplacer la donnée, la transformer, la stocker et éventuellement la supprimer pour terminer son cycle de vie<br><br>
+                        
+                      <span>Traitement en batch</span><br>
+                      </p>
+                      <div class="col-12">
+                         <img src="img/batch.jpg" alt="issam LAOUANE data analyst" loading="lazy">
+                      </div>
+                      <p class="about-pro">
+                         <br>
+                         C'est le traitement de données en lots, le but est de prendre des données en grande quantités d'un point A à un point B, ça permet de traiter des grands volumes de données en incrémental et avec toute logique d'Idempotence. <br>
+                         Le processing et le traitement se fait toutes les heures ou toutes les 12h, 24h c'est généralement dans ces ordres de pattern qu'on va appliquer le traitement en Batch.<br><br>
+                         Le problème du traitement en Batch, c'est qu'il est plutôt lent, car il s'agit de traiter de très gros volumes de données d'un coup. Ce n'est donc pas adapté si on veut transformer les données de manière rapide.  <br>  <br>                   
+                         Outils    <br><br>
+                         Apache Airflow + snowflake<br>
+                         PREFECT + Amazon Redshift<br>
+                         Apache Sparke + Amazon Redshift + Apache Airflow     <br><br>                  
+                         
+                         <span>Traitment en streaming - Microbatchs </span><br><br>
+                       
+                      </p>
+                      <div class="col-12">
+                         <img src="img/stream.jpg" alt="issam LAOUANE data analyst" loading="lazy">
+                      </div>
+                      <p class="about-pro">
+                         <br>
+                         C'est un pattern qui va être utilisé pour traiter des gros volumes de données mais en petits morceaux, on rassemble les données en micro batchs, de manière scalable, et pour réduire le temps de traitement au lieu d'avoir un batch toutes les heures ou 24h ça sera par exemple toutes les minutes.<br><br>
+                         Apache Spark streaming microbatch<br><br>
+                       
+                         <span>Traitment en streaming - Presque temps réel </span><br><br>
+                       
+                      </p>
+                      <div class="col-12">
+                         <img src="img/stream2.jpg" alt="issam LAOUANE data analyst" loading="lazy">
+                      </div>
+                      <p class="about-pro">
+                         <br><br>
+                         C'est un pattern où l'on va traiter les données enregistrement par enregistrement.<br><br>
+                         Kafka ou Apache STORM ou Apache Flinck<br><br>
+                   
+                       <span>Kappa Architecture</span><br><br>
+                      </p>
+                      <div class="col-12">
+                         <img src="img/kappa.jpg" alt="issam LAOUANE data analyst" loading="lazy">
+                      </div>
+
+                      <p class="about-pro"><br><br>La Kappa Architecture est un modèle d'architecture de traitement des flux de données en temps réel. Elle a été proposée
+                       par<span> Jay Kreps, </span>l'un des créateurs d'Apache Kafka.<br>
+                       Le principal principe de la Kappa Architecture est d'utiliser un système de streaming pour traiter les données en temps réel de manière 
+                       continue, sans distinction entre les flux entrants et les données historiques. Cela permet de simplifier l'architecture en éliminant 
+                       la nécessité d'un système de traitement distinct pour les données en temps réel et les données historiques. Les données sont ingérées
+                       dans un flux continu, puis elles sont traitées de manière uniforme à mesure qu'elles arrivent.
+                       Il y a 3 couches l'architecture Kappa toutes en streaming temps réel, une première pour Ingérer, une deuxième pour Transformer et une troisième couche de service<br><br>
+                      
+                       
+                       
+                       
+                       <span>Lambda Architecture</span><br><br>
+                      </p>
+                      <div class="col-12">
+                         <img src="img/lambda.jpg" alt="issam LAOUANE data analyst" loading="lazy">
+                      </div>
+                      <p class="about-pro"> <br><br>La Lambda Architecture est un modèle d'architecture de traitement des données qui combine le traitement en stream temps réel 
+                       et le traitement en batch temps différé pour fournir une vue complète des données.<br> 
+                       Elle a été proposée par<span> Nathan Marz. </span>La Lambda Architecture repose sur la notion de deux voies parallèles de traitement des données : 
+                       une voie en temps réel et une voie en temps différé. Les données sont ingérées simultanément dans les deux voies. La voie en temps réel 
+                       est utilisée pour le traitement en continu des données en temps réel, tandis que la voie en temps différé est utilisée pour le traitement 
+                       batch des données historiques. Les résultats des deux voies sont ensuite fusionnés pour obtenir une vue complète des données
+                     c'est le croisement entre le traitement en batch et le traitement en stream.<br>
+              Pour l'architecture Lambda, 3 couches sont utilisées : une première c'est la couche batch la ou on va recupérer 
+                   les données, les transformer en batch et les stocker, la 2ème couche est en stream, 
+                   on va récupérer les données en temps réel, les transformer et les afficher en temps 
+                   réel. la 3eme couche qui est la couche de présentation ou de service qui permet de 
+                   fusionner les 2 approches, données en streaming et en batch, donc finalement cette 
+                   couche de présentation va permettre de consolider la partie batch et la partie 
+                   streaming pour avoir des résultats rapides avec la couche streaming et précis avec 
+                   la couche batch.<br>
+                  </p>
+                       
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+  <!--fin projet 4 -->
+
+       <!--début projet 5 -->
+       <div class="projet5-section">  <!--wildlife-->
+        <div class="projet5-close hover-target"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                <h3>Dashboard - Data Visualization</h3>
+                </div>
+                <div class="col-12 mt-3 text-center">
+                <p><br></p>
+                </div>
+                <div class="col-12">
+                    <p class="about-pro">
+                      <span>Description </span><br><br>
+                      
+                      Un design pattern est une solution standardisée, a un problème récurrent qu'on cherche à résoudre. Un design pattern est donc fait pour être réutilisé. C'est une approche éprouvée qui encapsule des principes, logique d'architectures et d'algorithmes pour résoudre un problème<br>
+                      Un data pipeline est un processus automatisé pour ingérer les flux de données, déplacer la donnée, la transformer, la stocker et éventuellement la supprimer pour terminer son cycle de vie<br><br>
+                      
+                    <span>Traitement en batch</span><br>
+                    </p>
+                    <div class="col-12">
+                       <img src="img/batch.jpg" alt="issam LAOUANE data analyst" loading="lazy">
+                    </div>
+                    <p class="about-pro">
+                       <br>
+                       C'est le traitement de données en lots, le but est de prendre des données en grande quantités d'un point A à un point B, ça permet de traiter des grands volumes de données en incrémental et avec toute logique d'Idempotence. <br>
+                       Le processing et le traitement se fait toutes les heures ou toutes les 12h, 24h c'est généralement dans ces ordres de pattern qu'on va appliquer le traitement en Batch.<br><br>
+                       Le problème du traitement en Batch, c'est qu'il est plutôt lent, car il s'agit de traiter de très gros volumes de données d'un coup. Ce n'est donc pas adapté si on veut transformer les données de manière rapide.  <br>  <br>                   
+                       Outils    <br><br>
+                       Apache Airflow + snowflake<br>
+                       PREFECT + Amazon Redshift<br>
+                       Apache Sparke + Amazon Redshift + Apache Airflow     <br><br>                  
+                       
+                       <span>Traitment en streaming - Microbatchs </span><br><br>
+                     
+                    </p>
+                    <div class="col-12">
+                       <img src="img/stream.jpg" alt="issam LAOUANE data analyst" loading="lazy">
+                    </div>
+                    <p class="about-pro">
+                       <br>
+                       C'est un pattern qui va être utilisé pour traiter des gros volumes de données mais en petits morceaux, on rassemble les données en micro batchs, de manière scalable, et pour réduire le temps de traitement au lieu d'avoir un batch toutes les heures ou 24h ça sera par exemple toutes les minutes.<br><br>
+                       Apache Spark streaming microbatch<br><br>
+                     
+                       <span>Traitment en streaming - Presque temps réel </span><br><br>
+                     
+                    </p>
+                    <div class="col-12">
+                       <img src="img/stream2.jpg" alt="issam LAOUANE data analyst" loading="lazy">
+                    </div>
+                    <p class="about-pro">
+                       <br><br>
+                       C'est un pattern où l'on va traiter les données enregistrement par enregistrement.<br><br>
+                       Kafka ou Apache STORM ou Apache Flinck<br><br>
+                 
+                     <span>Kappa Architecture</span><br><br>
+                    </p>
+                    <div class="col-12">
+                       <img src="img/kappa.jpg" alt="issam LAOUANE data analyst" loading="lazy">
+                    </div>
+
+                    <p class="about-pro"><br><br>La Kappa Architecture est un modèle d'architecture de traitement des flux de données en temps réel. Elle a été proposée
+                     par<span> Jay Kreps, </span>l'un des créateurs d'Apache Kafka.<br>
+                     Le principal principe de la Kappa Architecture est d'utiliser un système de streaming pour traiter les données en temps réel de manière 
+                     continue, sans distinction entre les flux entrants et les données historiques. Cela permet de simplifier l'architecture en éliminant 
+                     la nécessité d'un système de traitement distinct pour les données en temps réel et les données historiques. Les données sont ingérées
+                     dans un flux continu, puis elles sont traitées de manière uniforme à mesure qu'elles arrivent.
+                     Il y a 3 couches l'architecture Kappa toutes en streaming temps réel, une première pour Ingérer, une deuxième pour Transformer et une troisième couche de service<br><br>
+                    
+                     
+                     
+                     
+                     <span>Lambda Architecture</span><br><br>
+                    </p>
+                    <div class="col-12">
+                       <img src="img/lambda.jpg" alt="issam LAOUANE data analyst" loading="lazy">
+                    </div>
+                    <p class="about-pro"> <br><br>La Lambda Architecture est un modèle d'architecture de traitement des données qui combine le traitement en stream temps réel 
+                     et le traitement en batch temps différé pour fournir une vue complète des données.<br> 
+                     Elle a été proposée par<span> Nathan Marz. </span>La Lambda Architecture repose sur la notion de deux voies parallèles de traitement des données : 
+                     une voie en temps réel et une voie en temps différé. Les données sont ingérées simultanément dans les deux voies. La voie en temps réel 
+                     est utilisée pour le traitement en continu des données en temps réel, tandis que la voie en temps différé est utilisée pour le traitement 
+                     batch des données historiques. Les résultats des deux voies sont ensuite fusionnés pour obtenir une vue complète des données
+                   c'est le croisement entre le traitement en batch et le traitement en stream.<br>
+            Pour l'architecture Lambda, 3 couches sont utilisées : une première c'est la couche batch la ou on va recupérer 
+                 les données, les transformer en batch et les stocker, la 2ème couche est en stream, 
+                 on va récupérer les données en temps réel, les transformer et les afficher en temps 
+                 réel. la 3eme couche qui est la couche de présentation ou de service qui permet de 
+                 fusionner les 2 approches, données en streaming et en batch, donc finalement cette 
+                 couche de présentation va permettre de consolider la partie batch et la partie 
+                 streaming pour avoir des résultats rapides avec la couche streaming et précis avec 
+                 la couche batch.<br>
+                </p>
+                     
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!--fin projet 5 -->
+
+       <!--début projet 6 -->
+       <div class="projet6-section">  <!--wildlife-->
+        <div class="projet6-close hover-target"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                <h3>Collaboration Data project</h3>
+                </div>
+                <div class="col-12 mt-3 text-center">
+                <p><br></p>
+                </div>
+                <div class="col-12">
+                    <p class="about-pro">
+                      <span>Description </span><br><br>
+                      
+                      Un design pattern est une solution standardisée, a un problème récurrent qu'on cherche à résoudre. Un design pattern est donc fait pour être réutilisé. C'est une approche éprouvée qui encapsule des principes, logique d'architectures et d'algorithmes pour résoudre un problème<br>
+                      Un data pipeline est un processus automatisé pour ingérer les flux de données, déplacer la donnée, la transformer, la stocker et éventuellement la supprimer pour terminer son cycle de vie<br><br>
+                      
+                    <span>Traitement en batch</span><br>
+                    </p>
+                    <div class="col-12">
+                       <img src="img/batch.jpg" alt="issam LAOUANE data analyst" loading="lazy">
+                    </div>
+                    <p class="about-pro">
+                       <br>
+                       C'est le traitement de données en lots, le but est de prendre des données en grande quantités d'un point A à un point B, ça permet de traiter des grands volumes de données en incrémental et avec toute logique d'Idempotence. <br>
+                       Le processing et le traitement se fait toutes les heures ou toutes les 12h, 24h c'est généralement dans ces ordres de pattern qu'on va appliquer le traitement en Batch.<br><br>
+                       Le problème du traitement en Batch, c'est qu'il est plutôt lent, car il s'agit de traiter de très gros volumes de données d'un coup. Ce n'est donc pas adapté si on veut transformer les données de manière rapide.  <br>  <br>                   
+                       Outils    <br><br>
+                       Apache Airflow + snowflake<br>
+                       PREFECT + Amazon Redshift<br>
+                       Apache Sparke + Amazon Redshift + Apache Airflow     <br><br>                  
+                       
+                       <span>Traitment en streaming - Microbatchs </span><br><br>
+                     
+                    </p>
+                    <div class="col-12">
+                       <img src="img/stream.jpg" alt="issam LAOUANE data analyst" loading="lazy">
+                    </div>
+                    <p class="about-pro">
+                       <br>
+                       C'est un pattern qui va être utilisé pour traiter des gros volumes de données mais en petits morceaux, on rassemble les données en micro batchs, de manière scalable, et pour réduire le temps de traitement au lieu d'avoir un batch toutes les heures ou 24h ça sera par exemple toutes les minutes.<br><br>
+                       Apache Spark streaming microbatch<br><br>
+                     
+                       <span>Traitment en streaming - Presque temps réel </span><br><br>
+                     
+                    </p>
+                    <div class="col-12">
+                       <img src="img/stream2.jpg" alt="issam LAOUANE data analyst" loading="lazy">
+                    </div>
+                    <p class="about-pro">
+                       <br><br>
+                       C'est un pattern où l'on va traiter les données enregistrement par enregistrement.<br><br>
+                       Kafka ou Apache STORM ou Apache Flinck<br><br>
+                 
+                     <span>Kappa Architecture</span><br><br>
+                    </p>
+                    <div class="col-12">
+                       <img src="img/kappa.jpg" alt="issam LAOUANE data analyst" loading="lazy">
+                    </div>
+
+                    <p class="about-pro"><br><br>La Kappa Architecture est un modèle d'architecture de traitement des flux de données en temps réel. Elle a été proposée
+                     par<span> Jay Kreps, </span>l'un des créateurs d'Apache Kafka.<br>
+                     Le principal principe de la Kappa Architecture est d'utiliser un système de streaming pour traiter les données en temps réel de manière 
+                     continue, sans distinction entre les flux entrants et les données historiques. Cela permet de simplifier l'architecture en éliminant 
+                     la nécessité d'un système de traitement distinct pour les données en temps réel et les données historiques. Les données sont ingérées
+                     dans un flux continu, puis elles sont traitées de manière uniforme à mesure qu'elles arrivent.
+                     Il y a 3 couches l'architecture Kappa toutes en streaming temps réel, une première pour Ingérer, une deuxième pour Transformer et une troisième couche de service<br><br>
+                    
+                     
+                     
+                     
+                     <span>Lambda Architecture</span><br><br>
+                    </p>
+                    <div class="col-12">
+                       <img src="img/lambda.jpg" alt="issam LAOUANE data analyst" loading="lazy">
+                    </div>
+                    <p class="about-pro"> <br><br>La Lambda Architecture est un modèle d'architecture de traitement des données qui combine le traitement en stream temps réel 
+                     et le traitement en batch temps différé pour fournir une vue complète des données.<br> 
+                     Elle a été proposée par<span> Nathan Marz. </span>La Lambda Architecture repose sur la notion de deux voies parallèles de traitement des données : 
+                     une voie en temps réel et une voie en temps différé. Les données sont ingérées simultanément dans les deux voies. La voie en temps réel 
+                     est utilisée pour le traitement en continu des données en temps réel, tandis que la voie en temps différé est utilisée pour le traitement 
+                     batch des données historiques. Les résultats des deux voies sont ensuite fusionnés pour obtenir une vue complète des données
+                   c'est le croisement entre le traitement en batch et le traitement en stream.<br>
+            Pour l'architecture Lambda, 3 couches sont utilisées : une première c'est la couche batch la ou on va recupérer 
+                 les données, les transformer en batch et les stocker, la 2ème couche est en stream, 
+                 on va récupérer les données en temps réel, les transformer et les afficher en temps 
+                 réel. la 3eme couche qui est la couche de présentation ou de service qui permet de 
+                 fusionner les 2 approches, données en streaming et en batch, donc finalement cette 
+                 couche de présentation va permettre de consolider la partie batch et la partie 
+                 streaming pour avoir des résultats rapides avec la couche streaming et précis avec 
+                 la couche batch.<br>
+                </p>
+                     
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!--fin projet 6 -->
+       <!--début projet 7 -->
+       <div class="projet7-section">  <!--wildlife-->
+        <div class="projet7-close hover-target"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                <h3>Web Scraping - API - Own Data</h3>
+                </div>
+                <div class="col-12 mt-3 text-center">
+                <p><br></p>
+                </div>
+                <div class="col-12">
+                    <p class="about-pro">
+                      <span>Description </span><br><br>
+                      
+                      Un design pattern est une solution standardisée, a un problème récurrent qu'on cherche à résoudre. Un design pattern est donc fait pour être réutilisé. C'est une approche éprouvée qui encapsule des principes, logique d'architectures et d'algorithmes pour résoudre un problème<br>
+                      Un data pipeline est un processus automatisé pour ingérer les flux de données, déplacer la donnée, la transformer, la stocker et éventuellement la supprimer pour terminer son cycle de vie<br><br>
+                      
+                    <span>Traitement en batch</span><br>
+                    </p>
+                    <div class="col-12">
+                       <img src="img/batch.jpg" alt="issam LAOUANE data analyst" loading="lazy">
+                    </div>
+                    <p class="about-pro">
+                       <br>
+                       C'est le traitement de données en lots, le but est de prendre des données en grande quantités d'un point A à un point B, ça permet de traiter des grands volumes de données en incrémental et avec toute logique d'Idempotence. <br>
+                       Le processing et le traitement se fait toutes les heures ou toutes les 12h, 24h c'est généralement dans ces ordres de pattern qu'on va appliquer le traitement en Batch.<br><br>
+                       Le problème du traitement en Batch, c'est qu'il est plutôt lent, car il s'agit de traiter de très gros volumes de données d'un coup. Ce n'est donc pas adapté si on veut transformer les données de manière rapide.  <br>  <br>                   
+                       Outils    <br><br>
+                       Apache Airflow + snowflake<br>
+                       PREFECT + Amazon Redshift<br>
+                       Apache Sparke + Amazon Redshift + Apache Airflow     <br><br>                  
+                       
+                       <span>Traitment en streaming - Microbatchs </span><br><br>
+                     
+                    </p>
+                    <div class="col-12">
+                       <img src="img/stream.jpg" alt="issam LAOUANE data analyst" loading="lazy">
+                    </div>
+                    <p class="about-pro">
+                       <br>
+                       C'est un pattern qui va être utilisé pour traiter des gros volumes de données mais en petits morceaux, on rassemble les données en micro batchs, de manière scalable, et pour réduire le temps de traitement au lieu d'avoir un batch toutes les heures ou 24h ça sera par exemple toutes les minutes.<br><br>
+                       Apache Spark streaming microbatch<br><br>
+                     
+                       <span>Traitment en streaming - Presque temps réel </span><br><br>
+                     
+                    </p>
+                    <div class="col-12">
+                       <img src="img/stream2.jpg" alt="issam LAOUANE data analyst" loading="lazy">
+                    </div>
+                    <p class="about-pro">
+                       <br><br>
+                       C'est un pattern où l'on va traiter les données enregistrement par enregistrement.<br><br>
+                       Kafka ou Apache STORM ou Apache Flinck<br><br>
+                 
+                     <span>Kappa Architecture</span><br><br>
+                    </p>
+                    <div class="col-12">
+                       <img src="img/kappa.jpg" alt="issam LAOUANE data analyst" loading="lazy">
+                    </div>
+
+                    <p class="about-pro"><br><br>La Kappa Architecture est un modèle d'architecture de traitement des flux de données en temps réel. Elle a été proposée
+                     par<span> Jay Kreps, </span>l'un des créateurs d'Apache Kafka.<br>
+                     Le principal principe de la Kappa Architecture est d'utiliser un système de streaming pour traiter les données en temps réel de manière 
+                     continue, sans distinction entre les flux entrants et les données historiques. Cela permet de simplifier l'architecture en éliminant 
+                     la nécessité d'un système de traitement distinct pour les données en temps réel et les données historiques. Les données sont ingérées
+                     dans un flux continu, puis elles sont traitées de manière uniforme à mesure qu'elles arrivent.
+                     Il y a 3 couches l'architecture Kappa toutes en streaming temps réel, une première pour Ingérer, une deuxième pour Transformer et une troisième couche de service<br><br>
+                    
+                     
+                     
+                     
+                     <span>Lambda Architecture</span><br><br>
+                    </p>
+                    <div class="col-12">
+                       <img src="img/lambda.jpg" alt="issam LAOUANE data analyst" loading="lazy">
+                    </div>
+                    <p class="about-pro"> <br><br>La Lambda Architecture est un modèle d'architecture de traitement des données qui combine le traitement en stream temps réel 
+                     et le traitement en batch temps différé pour fournir une vue complète des données.<br> 
+                     Elle a été proposée par<span> Nathan Marz. </span>La Lambda Architecture repose sur la notion de deux voies parallèles de traitement des données : 
+                     une voie en temps réel et une voie en temps différé. Les données sont ingérées simultanément dans les deux voies. La voie en temps réel 
+                     est utilisée pour le traitement en continu des données en temps réel, tandis que la voie en temps différé est utilisée pour le traitement 
+                     batch des données historiques. Les résultats des deux voies sont ensuite fusionnés pour obtenir une vue complète des données
+                   c'est le croisement entre le traitement en batch et le traitement en stream.<br>
+            Pour l'architecture Lambda, 3 couches sont utilisées : une première c'est la couche batch la ou on va recupérer 
+                 les données, les transformer en batch et les stocker, la 2ème couche est en stream, 
+                 on va récupérer les données en temps réel, les transformer et les afficher en temps 
+                 réel. la 3eme couche qui est la couche de présentation ou de service qui permet de 
+                 fusionner les 2 approches, données en streaming et en batch, donc finalement cette 
+                 couche de présentation va permettre de consolider la partie batch et la partie 
+                 streaming pour avoir des résultats rapides avec la couche streaming et précis avec 
+                 la couche batch.<br>
+                </p>
+                     
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!--fin projet 7 -->
+
       </div>
         
       <div class='cursor' id="cursor"></div>
@@ -497,7 +906,7 @@
 -->
            <hr>
             <div class="col-12 mt-3">
-              <p class="about-pro">Administrateur des <span>systèmes de gestion des données</span><br>Lavnet - Paris 18<br>Aout 2020 - Juin 2021</p>
+              <p class="about-pro">Administrateur des <span>systèmes de gestion des données</span><br>Lavnet - Paris 3<br>Aout 2020 - Juin 2021</p>
             </div>
             <div class="col-12">
               <ul class="about-pro">
