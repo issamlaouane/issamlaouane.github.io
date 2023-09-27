@@ -49,16 +49,17 @@ div.projet-section div.hero-section {
 		z-index : 1;
 	}
 
-	div.projet1-close.hover-target {
+	div.projet1-close.hover-target,
+  div.projet2-close.hover-target,
+  div.projet3-close.hover-target,
+  div.projet4-close.hover-target,
+  div.projet5-close.hover-target,
+  div.projet6-close.hover-target,
+  div.projet7-close.hover-target
+  {
 		z-index : 12;
 	}
 
-	div.projet2-close.hover-target {
-		z-index : 11;
-	}
-div.projet3-close.hover-target {
-		z-index : 11;
-	}
 
 
 hr {
@@ -148,16 +149,31 @@ a {
 a:hover {  /* survole de lien */
   text-decoration: none;
 }
-::selection { /* lorsque l'utilisateur sélectionne du texte sur la page,
-	 il sera affiché avec la couleur de texte et l'arrière-plan*/
-  color: #c4c3ca;
-  background-color: #000;
+
+/* Désactiver la mise en évidence de la sélection */
+::-moz-selection { background: transparent ; }
+::selection { background: transparent ; }
+
+
+/* Personnaliser la mise en évidence de la sélection */
+::-moz-selection { background: #ffa500; }
+::selection { background: #ffa500; }
+
+/* Désactiver le dégradé de texte lors de la sélection */
+.hero-section p span::selection,
+.contact-text::selection,
+.about-text::selection,
+.hero-section .dancing::selection, 
+h1::selection,
+h2::selection,
+h3::selection {
+  background-image: none;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
+  background-clip: initial;
+  color: initial;
 }
-::-moz-selection { /* ::-moz-selection est spécifique à Firefox, tandis que 
-	::selection est utilisé par la plupart des autres navigateurs.*/
-  color: #c4c3ca;
-  background-color: #000;
-}
+
 
 /* #Cursor
 ================================================== */
@@ -314,7 +330,12 @@ body.nature-on .hero-section,
 body.projet-on .hero-section,
 body.projet3-on .hero-section,
 body.projet2-on .hero-section,
-body.projet1-on .hero-section {
+body.projet1-on .hero-section,
+body.projet4-on .hero-section,
+body.projet5-on .hero-section,
+body.projet6-on .hero-section,
+body.projet7-on .hero-section
+{
   transform: rotateX(-10deg);
   -webkit-transition-delay: 0ms;
   transition-delay: 0ms;
@@ -533,7 +554,11 @@ body.contact-on .contact-section {
 .nature-section,
 .projet1-section,
 .projet3-section,
-.projet2-section {
+.projet2-section,
+.projet4-section,
+.projet5-section,
+.projet6-section,
+.projet7-section {
     position: fixed;
   top: 100%;
   left: 0;
@@ -554,6 +579,10 @@ body.contact-on .contact-section {
 .projet1-close,
 .projet2-close,
 .projet3-close,
+.projet4-close,
+.projet5-close,
+.projet6-close,
+.projet7-close,
 .projet-close,
 .wildlife-close,
 .nature-close {
@@ -580,6 +609,10 @@ body.contact-on .contact-section {
 .projet1-close:hover,
 .projet2-close:hover,
 .projet3-close:hover,
+.projet4-close:hover,
+.projet5-close:hover,
+.projet6-close:hover,
+.projet7-close:hover,
 .projet-close:hover,
 .contact-close:hover,
 .about-close:hover {
@@ -593,7 +626,11 @@ body.wildlife-on .wildlife-section,
 body.travel-on .travel-section,
 body.projet2-on .projet2-section,
 body.projet3-on .projet3-section,
-body.projet1-on .projet1-section {
+body.projet1-on .projet1-section,
+body.projet4-on .projet4-section,
+body.projet5-on .projet5-section,
+body.projet6-on .projet6-section,
+body.projet7-on .projet7-section {
   top: 0;
   -webkit-transition-delay: 400ms;
   transition-delay: 400ms;
@@ -604,7 +641,11 @@ body.projet1-on .projet1-section {
 .nature-section img,
 .projet1-section img,
 .projet2-section img,
-.projet3-section img {
+.projet3-section img,
+.projet4-section img,
+.projet5-section img,
+.projet6-section img,
+.projet7-section img {
   margin-top: 30px;
     width: 100%;
   height: auto;
@@ -620,7 +661,11 @@ body.projet1-on .projet1-section {
 .projet-section h3,
 .projet1-section h3,
 .projet2-section h3,
-.projet3-section h3
+.projet3-section h3,
+.projet4-section h3,
+.projet5-section h3,
+.projet6-section h3,
+.projet7-section h3
   {
   font-size: 44px;
   line-height: 1.3;
@@ -636,7 +681,11 @@ body.projet1-on .projet1-section {
 .projet-section p,
 .projet1-section p,
 .projet2-section p,
-.projet3-section p {
+.projet3-section p,
+.projet4-section p,
+.projet5-section p,
+.projet6-section p,
+.projet7-section p {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 1px;
@@ -647,7 +696,11 @@ body.projet1-on .projet1-section {
 .projet-section p span,
 .projet1-section p span,
 .projet2-section p span,
-.projet3-section p span {
+.projet3-section p span,
+.projet4-section p span,
+.projet5-section p span,
+.projet6-section p span,
+.projet7-section p span {
   font-size: 20px;
   line-height: 1.3;
   font-weight: 700;
