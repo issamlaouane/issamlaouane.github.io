@@ -711,7 +711,7 @@ body.projet7-on .projet7-section {
 
 .link-to-portfolio {
     position: fixed;
-    bottom: calc(3vh + 3vw);
+    bottom: calc(5vh + 2vw);
     right: calc(3vh + 3vw);
     z-index: 200;
     cursor: pointer;
