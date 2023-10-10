@@ -733,6 +733,31 @@ body.projet7-on .projet7-section {
     box-shadow: 0 0 0 20px rgba(255,255,255,.1);
 transform: scale(1.4);
 }
+
+.link-to-shop {
+    position: fixed;
+    bottom: calc(7vh + 3vw);
+    left: calc(1vh + 1vw);
+    z-index: 200;
+    cursor: pointer;
+    width: calc(5vh + 5vw) /*60px*/;
+    height: calc(5vh + 5vw);  
+    text-align: center;
+    border-radius: 120%;
+    background-position: center center;
+    background-size: 150%;
+  background-repeat: no-repeat;
+    background-image: url('img/bioobeldi.jpg');
+    box-shadow: 0 0 0 4px rgba(255,255,255,.1);
+    transition: opacity .2s, border-radius .2s, box-shadow .2s;
+    transition-timing-function: ease-out;
+}
+.link-to-shop:hover {
+    opacity: 0.8;
+    border-radius: 30%;
+    box-shadow: 0 0 0 20px rgba(255,255,255,.1);
+transform: scale(1.4);
+}	  
 .about-pro{
   color: whitesmoke;
 }
