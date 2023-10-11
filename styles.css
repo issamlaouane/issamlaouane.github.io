@@ -375,8 +375,8 @@ body.projet7-on .hero-section
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30px 30px;
-  background-image: "img/left.svg";
-  opacity: 0.44;
+  background-image: "img/left.png";
+  opacity: 0.8;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
@@ -474,8 +474,8 @@ body.about-on .about-section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30px 30px;
-  background-image: "img/left.svg";
-  opacity: 0.44;
+  background-image: "img/right.png";
+  opacity: 0.8;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
