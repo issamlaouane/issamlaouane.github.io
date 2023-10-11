@@ -42,7 +42,8 @@ div.section-center div.container div.col-12 div.col-12 img.photo {
 div.projet-section div.hero-section {
 	position: absolute;
 	top:0;
-	left:0
+	left:0;
+  overflow: auto;
 }
 
 	div.projet-close.hover-target {
@@ -308,7 +309,7 @@ spécifique et ont une transition fluide lors de changements de style.*/
   background-position: center;
   background-size: 30px 30px;
   background-image: url('img/down.png');
-  /*opacity: 0.77;*/
+  opacity: 0.77;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
@@ -375,8 +376,8 @@ body.projet7-on .hero-section
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30px 30px;
-  background-image: "img/left.png";
-  opacity: 0.8;
+  background-image: url('img/left.png');
+  opacity: 0.4;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
@@ -474,8 +475,8 @@ body.about-on .about-section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30px 30px;
-  background-image: "img/right.png";
-  opacity: 0.8;
+  background-image: url('img/left.png');
+  opacity: 0.4;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
@@ -711,7 +712,7 @@ body.projet7-on .projet7-section {
 
 .link-to-portfolio {
     position: fixed;
-    bottom: calc(10vh + 6vw);
+    bottom: calc(10vh + 3vw);
     right: calc(1vh + 1vw);
     z-index: 200;
     cursor: pointer;
@@ -736,7 +737,7 @@ transform: scale(1.4);
 
 .link-to-shop {
     position: fixed;
-    bottom: calc(10vh + 6vw);
+    bottom: calc(10vh + 3vw);
     left: calc(1vh + 1vw);
     z-index: 200;
     cursor: pointer;
