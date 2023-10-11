@@ -309,7 +309,7 @@ spécifique et ont une transition fluide lors de changements de style.*/
   background-position: center;
   background-size: 30px 30px;
   background-image: url('img/down.png');
-  opacity: 0.77;
+  opacity: 0.4;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
