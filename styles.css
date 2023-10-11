@@ -711,12 +711,12 @@ body.projet7-on .projet7-section {
 
 .link-to-portfolio {
     position: fixed;
-    bottom: calc(7vh + 3vw);
+    bottom: calc(10vh + 6vw);
     right: calc(1vh + 1vw);
     z-index: 200;
     cursor: pointer;
-    width: calc(5vh + 5vw) /*60px*/;
-    height: calc(5vh + 5vw);  
+    width: calc(7vh + 7vw) /*60px*/;
+    height: calc(7vh + 7vw);  
     text-align: center;
     border-radius: 120%;
     background-position: center center;
@@ -736,12 +736,12 @@ transform: scale(1.4);
 
 .link-to-shop {
     position: fixed;
-    bottom: calc(7vh + 3vw);
+    bottom: calc(10vh + 6vw);
     left: calc(1vh + 1vw);
     z-index: 200;
     cursor: pointer;
-    width: calc(5vh + 5vw) /*60px*/;
-    height: calc(5vh + 5vw);  
+    width: calc(7vh + 7vw) /*60px*/;
+    height: calc(7vh + 7vw);  
     text-align: center;
     border-radius: 120%;
     background-position: center center;
