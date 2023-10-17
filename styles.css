@@ -230,6 +230,15 @@ spécifique et ont une transition fluide lors de changements de style.*/
   border-color: transparent;
 }
 
+@media screen and (min-width: 1200px){
+  .link-to-shop, .link-to-portfolio {
+    bottom: calc(5vh + 3vw);
+    width: calc(3vh + 3vw) /*60px*/;
+    height: calc(3vh + 3vw);
+   }
+}
+
+	  
 @media screen and (max-width: 1200px){
   .cursor,.cursor2,.cursor3{
     display: none
