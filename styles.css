@@ -720,12 +720,9 @@ body.projet7-on .projet7-section {
 
 .link-to-portfolio {
     position: fixed;
-    bottom: calc(10vh + 3vw);
     right: calc(1vh + 1vw);
     z-index: 200;
     cursor: pointer;
-    width: calc(7vh + 7vw) /*60px*/;
-    height: calc(7vh + 7vw);  
     text-align: center;
     border-radius: 120%;
     background-position: center center;
@@ -745,12 +742,9 @@ transform: scale(1.4);
 
 .link-to-shop {
     position: fixed;
-    bottom: calc(10vh + 3vw);
     left: calc(1vh + 1vw);
     z-index: 200;
     cursor: pointer;
-    width: calc(7vh + 7vw) /*60px*/;
-    height: calc(7vh + 7vw);  
     text-align: center;
     border-radius: 120%;
     background-position: center center;
@@ -772,9 +766,18 @@ transform: scale(1.4);
 }
 
 @media screen and (min-width: 1200px){
-  .link-to-shop, .link-to-portfolio {
+  .link-to-shop,
+  .link-to-portfolio {
     bottom: calc(5vh + 3vw);
     width: calc(3vh + 3vw) /*60px*/;
     height: calc(3vh + 3vw);
    }
+}
+@media screen and (max-width: 1200px){	  
+  .link-to-shop,
+  .link-to-portfolio {	
+    bottom: calc(10vh + 3vw);
+    width: calc(7vh + 7vw) /*60px*/;
+    height: calc(7vh + 7vw);  
+    }
 }
