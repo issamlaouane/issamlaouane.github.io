@@ -299,6 +299,63 @@
                       On commence par charger les données pour jeter un coup d'œil sur leur disposition, et on commence avec <span>R</span>
                      <br>
                     </p>
+                      <div class="code-container">
+                     
+                          <code>
+train <- read.csv('dataset_train.csv',sep=";")
+View(train)
+summary(train)
+                          </code>
+                     
+                      </div>
+                      <div class="col-12">
+                        <img src="img/1st view.png" alt="données de vente rollers - issam laouane data analyst engineer scientist" loading="lazy">
+                     </div>
+                      <p class="about-pro">
+                        <br> On commence par charger les données pour jeter un coup d'œil sur leur disposition, et on commence avec <span>R</span>
+                       <br>
+                      </p>    
+                      <div class="col-12">
+                        <img src="img/summary.png" alt="summary données de vente rollers - issam laouane data analyst engineer scientist" loading="lazy">
+                      </div> 
+                     <p class="about-pro">
+                      <br>
+                      On remarque qu'il y a des valeurs manquantes dans les variables "holiday", "workingday", "weather", "casual" et "registered".
+                     <br>
+                     On <span>trie</span> les données selon la date, puis on <span>transforme</span> les dates de chaines de caractère au format date :
+                    </p>  
+                    <div class="code-container">
+                     
+                      <code>
+# tri selon la date
+train <- as.data.frame(train[order(train[,1],decreasing=F), ])
+
+# mettre la chaine de caractère en format date
+train <- train %>%
+  mutate(datetime = as.POSIXct(datetime, format = "%Y-%m-%d %H:%M:%S"))
+
+View(train)
+                      </code>
+                 
+                  </div>
+                  <div class="col-12">
+                    <img src="img/sorted_data.png" alt="données de vente rollers triées - issam laouane data analyst engineer scientist" loading="lazy">
+                  </div> 
+                  <p class="about-pro">
+                    <br>
+                    Mise à part les valeurs manquantes, on regardant de plus près les données,
+                     on voit qu'il y en a qui sont <span>mal codés</span> , ainsi par exemple la variable
+                    "season" prend 12 valeurs différentes au lieu des 4 possibles :
+                  </p>  
+                  <div class="code-container">
+                    <code>
+table(train$season)
+                    </code>
+                </div>
+                <div class="col-12">
+                  <img src="img/table_season.png" alt="table season - issam laouane data analyst engineer scientist" loading="lazy">
+                </div> 
+
                   </div>
               </div>
             </div>
