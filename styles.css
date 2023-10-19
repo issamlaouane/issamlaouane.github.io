@@ -6,7 +6,24 @@
   flex-direction: column;
   align-items: center;
 }
+.code-container {
 
+  margin 0;
+  width: fit-content;
+  height: fit-content;
+  background-color: #fff;
+  text-align: left;
+  padding: 0 3vw;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+code {
+  width: fit-content;
+  height: fit-content;
+  display: block;
+  white-space: pre-wrap;
+  color:#0a120a;
+}
 p.content span {
 background-image: linear-gradient(to bottom, #0a120a, #1c1111);
   -webkit-background-clip: text; /* pour la prise en charge de WebKit (Chrome, Safari) */
