@@ -349,8 +349,49 @@ View(train)
                   </p>  
 
                 <div class="col-12">
+                  <img src="img/season_str.png" alt="table season - issam laouane data analyst engineer scientist" loading="lazy">
                   <img src="img/table_season.png" alt="table season - issam laouane data analyst engineer scientist" loading="lazy">
                 </div> 
+                <p class="about-pro">
+                  <br>
+Pour mettre la variable "season" au propre, j'ai choisis de la déduire à partir de la date de l'observation, avec ce code, on compare 
+la date aux différentes saisons et on met à jour avec la bonne valeur qui correspond à la saison :
+                </p> 
+                <div class="col-12">
+                  <img src="img/season.png" alt="traitement de la variable de saison 'season' - issam laouane data analyst engineer scientist" loading="lazy">
+                </div> 
+                <p class="about-pro">
+                  <br>
+Maintenant "season" est bien propre sans valeurs insignifiantes ou non renseignées :
+                </p> 
+                <div class="col-12">
+                  <img src="img/season_clean.png" alt="traitement de la variable de saison 'season' - issam laouane data analyst engineer scientist" loading="lazy">
+                </div>
+                <p class="about-pro">
+                  <br>
+La variable <span>workingday</span> est censée être 0 pour un jour non travaillé et 1 pour un jour travaillé :
+                </p> 
+
+                <div class="col-12">
+                  <img src="img/workingday.png" alt="traitement de la variable de saison 'season' - issam laouane data analyst engineer scientist" loading="lazy">
+                  <img src="img/table_workingday.png" alt="traitement de la variable de saison 'season' - issam laouane data analyst engineer scientist" loading="lazy">
+                  <img src="img/str_workingday.png" alt="traitement de la variable de saison 'season' - issam laouane data analyst engineer scientist" loading="lazy">
+                </div>
+
+                <p class="about-pro">
+                  <br>
+On a encore des valeurs <span>insignifiantes</span> et d'autres <span>non renseignées</span>, on va remettre ça au propre :<br>
+D'abord pour les NA's, on peut utiliser la fonction locf = <span>"Last Observation Carried Forward"</span>, ce qui signifie qu'elle 
+remplace les valeurs manquantes par la dernière valeur non manquante observée. On peut l'utiliser dans ce cas puisque 
+les valeurs successives sont espacées d'une heure, qui appartiennent au même jour avec une grande probabilité.<br>
+Généralement cela peut être utile dans des données temporelles telles que des séries temporelles d'observations quotidiennes.<br>
+Pour les valeurs 3 anormalement présentes, de même on les remplace par la valeur précédente, sauf qu'il ne y a pas de fonction pour ça, on la <span>code</span> nous-même :
+                </p> 
+                <div class="col-12">
+                  <img src="img/workingday_3.png" alt="traitement de la variable de 'workingday' - issam laouane data analyst engineer scientist" loading="lazy">
+                  <img src="img/workingday_str.png" alt="traitement de la variable de 'workingday' propre - issam laouane data analyst engineer scientist" loading="lazy">
+
+                </div>
 
                   </div>
               </div>
