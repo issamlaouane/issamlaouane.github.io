@@ -798,3 +798,9 @@ transform: scale(1.4);
     height: calc(7vh + 7vw);  
     }
 }
+html,
+body {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
