@@ -66,7 +66,8 @@ div.projet-section div.hero-section {
 	position: absolute;
 	top:0;
 	left:0;
-  overflow: auto;
+  	overflow: auto;
+	vertical-align: top
 }
 
 	div.projet-close.hover-target {
