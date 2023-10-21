@@ -428,7 +428,42 @@ Après :<br>
   <img src="img/holiday_cl_summary.png" alt="traitement de la variable de 'holiday' propre summary - issam laouane data analyst engineer scientist" loading="lazy">
 </div>
 
+ <p class="about-pro">
+  <br>
+<span>Exporter</span> le dataframe vers un csv ou xlsx :<br>
+</p>
 
+<div class="code-container">
+                     
+                          <code>
+library(writexl)
+write_xlsx(train, "C:/Users/iss/Desktop/iss3110/analyse exploratoire/mon_fichier.xlsx")
+write.csv(train, "C:/Users/iss/Desktop/iss3110/analyse exploratoire/mon_fichier.csv")
+                          </code>
+                     
+                      </div>
+ <p class="about-pro">
+  <br>
+Un premier graphe des données avec <span>ggplot2</span> :<br>
+</p>
+
+
+<div class="code-container">
+                     
+                          <code>
+p <- ggplot(train, aes(x=datetime ,y=count,col=season))
+p <- p + geom_point() +
+  xlab("dates") + 
+  ylab("Ventes par heure") +
+  labs(col='Ventes moyennes par saison')
+p
+                          </code>
+                     
+                      </div>
+<div class="col-12">
+  <img src="img/ggplot.png" alt="graphe des ventes de rollers - issam laouane data analyst engineer scientist" loading="lazy">
+</div>
+ 
 
                   </div>
               </div>
