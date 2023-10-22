@@ -463,7 +463,106 @@ p
 <div class="col-12">
   <img src="img/ggplot.png" alt="graphe des ventes de rollers - issam laouane data analyst engineer scientist" loading="lazy">
 </div>
- 
+
+<p class="about-pro">
+  <br>
+A première vu on voit un peu l'effet de <span>la saison </span> sur les ventes, et qu'il y a 
+une amélioration sur la période d'un an, 
+mais le graphe reste <span>illisible</span> à cause du nombre important des données prises toutes les heures <br>
+Maintenant on va <span>agréger</span> les données pour plus de visibilité, et pour ressortir l'effet des <span>abonnés</span> et non abonnés
+</p>
+
+<div class="code-container">
+                     
+  <code>
+# Agréger les ventes par mois pour registered, casual et le total
+monthly_sales <- train %>%
+  group_by(month = floor_date(datetime, "month")) %>%
+  summarise(registered_sales = sum(registered),
+            casual_sales = sum(casual),
+            total_sales = sum(count))
+
+# Transformer les données en format long
+monthly_sales_long <- pivot_longer(monthly_sales, cols = c(registered_sales, casual_sales, total_sales),
+                                    names_to = "Type_de_vente", values_to = "Ventes")
+
+# Créer un graphique en ligne pour l'évolution temporelle des ventes par mois
+p <- ggplot(monthly_sales_long, aes(x = month, y = Ventes, color = Type_de_vente)) +
+  geom_line() +
+  xlab("Mois") +
+  ylab("Ventes par mois") +
+  labs(col='Type de Vente') +
+  scale_color_manual(values = c("registered_sales" = "blue", "casual_sales" = "green", "total_sales" = "red"),
+                      labels = c("registered_sales" = "Abonnés", "casual_sales" = "Non abonnés", "total_sales" = "Total")) +
+  theme_minimal()
+
+print(p)
+  </code>
+
+</div>
+
+<div class="col-12">
+  <img src="img/ventes.png" alt="graphe des ventes totales, des abonnés et des non abonnés site web - issam laouane data analyst engineer scientist" loading="lazy">
+</div>
+<p class="about-pro">
+  <br>
+On voit que la grande partie des ventes vient des abonnés, il faut les <span>fidéliser</span> et les bien garder, 
+et s'il y a une <span>campagne publicitaire</span> à faire, c'est pendant l'été là où il y a un potentiel de nouveaux clients non abonnés<br>
+</p>
+
+<div class="code-container">
+                     
+  <code>
+#### Agréger les ventes par condition météo ####
+
+weather_labels <- c("1" = "Dégagé à nuageux", "2" = "Brouillard", "3" = "Légère pluie ou neige", "4" = "Fortes averses ou neige")
+
+# Agréger les ventes par condition météo
+sales_by_weather <- train %>%
+  group_by(weather) %>%
+  summarise(total_sales = sum(count),
+            casual_sales = sum(casual),
+            registered_sales = sum(registered))
+
+# Mettre en forme les données en format long
+sales_by_weather_long <- sales_by_weather %>%
+  tidyr::gather(key = "Type_de_vente", value = "Ventes", -weather)
+
+# Créer un graphique en barres empilées
+p <- ggplot(sales_by_weather_long, aes(x = factor(weather), y = Ventes, fill = Type_de_vente)) +
+  geom_bar(stat = "identity", position = "stack") +
+  xlab("Conditions Météo") +
+  ylab("Ventes") +
+  scale_fill_manual(values = c("total_sales" = "blue", "casual_sales" = "green", "registered_sales" = "red"), 
+                    name = "Type de Vente") +
+  theme_minimal() +
+  scale_x_discrete(labels = weather_labels)
+
+# Afficher le graphique
+print(p)
+  </code>
+</div>
+
+<div class="col-12">
+  <img src="img/ventes_par_weather.png" alt="graphe des ventes totales, des abonnés et des non abonnés par le temps 'weather' - issam laouane data analyst engineer scientist" loading="lazy">
+</div>
+<p class="about-pro">
+  <br>
+On pourrait vite tirer une corrélation mais non ça vient essentiellement du nombre de jour dans l'année où il fait
+le temps 1 et quasiment aucun jour où il a neigé, c'est donc normal d'avoir cet aspect de forte corrélation</p>
+
+
+<p class="about-pro">
+  <br>
+On passe sur <span>Power BI</span> pour construire un tableau de bord des ventes :<br>
+</p>
+
+
+
+
+
+
+
 
                   </div>
               </div>
