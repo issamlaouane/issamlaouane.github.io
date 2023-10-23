@@ -582,7 +582,39 @@ print(p)
 On voit 2 pics de ventes un le matin vers <span>8h</span> et l'autre le soir vers <span>17h</span><br>
 </p>
 
+<div class="code-container">
+                     
+  <code>
+#### Analyse de l'impact du jour de la semaine :####
+# Agréger les ventes par jour de la semaine
+sales_by_weekday <- train %>%
+  group_by(weekday = wday(datetime, label = TRUE, week_start = 1)) %>%
+  summarise(total_sales = sum(count),
+            casual_sales = sum(casual),
+            registered_sales = sum(registered))
 
+# Mettre en forme les données en format long
+sales_by_weekday_long <- sales_by_weekday %>%
+  tidyr::gather(key = "Type_de_vente", value = "Ventes", -weekday)
+
+# Créer un graphique en ligne
+p <- ggplot(sales_by_weekday_long, aes(x = factor(weekday, levels = c("lun\\.", "mar\\.", "mer\\.", "jeu\\.", "ven\\.", "sam\\.", "dim\\.")), y = Ventes, fill = Type_de_vente)) +
+  geom_bar(stat = "identity", position = "stack") +
+  xlab("Jour de la Semaine") +
+  ylab("Ventes par Jour") +
+  labs(fill = 'Type de Vente') +
+  theme_minimal()
+print(p)
+  </code>
+</div>
+
+<div class="col-12">
+  <img src="img/ventes_par_jour.png" alt="graphe des ventes totales, des abonnés et des non abonnés par jour de la semaine - issam laouane data analyst engineer scientist" loading="lazy">
+</div>
+<p class="about-pro">
+  <br>
+On a décelé un caractère très important : les <span>ventes occasionnelles</span> sont très importantes le samedi et le dimanche<br>
+</p>
 
 
 
