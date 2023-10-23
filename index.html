@@ -549,7 +549,43 @@ print(p)
 <p class="about-pro">
   <br>
 On pourrait vite tirer une corrélation mais non ça vient essentiellement du nombre de jour dans l'année où il fait
-le temps 1 et quasiment aucun jour où il a neigé, c'est donc normal d'avoir cet aspect de forte corrélation</p>
+le temps 1 et quasiment aucun jour où il a neigé, c'est donc normal d'avoir cet aspect de forte corrélation<br>
+Ce qui ressort c'est seulement l'importance des abonnés et leur contribution dans le total de ventes</p>
+
+<div class="code-container">
+                     
+  <code>
+#### raphique en ligne pour montrer comment les ventes totales varient tout au long de la journée.####
+
+# Agréger les ventes par heure
+sales_by_hour <- train %>%
+  group_by(hour = hour(datetime)) %>%
+  summarise(total_sales = sum(count))
+
+# Créer un graphique en ligne
+p <- ggplot(sales_by_hour, aes(x = hour, y = total_sales)) +
+  geom_line() +
+  xlab("Heure") +
+  ylab("Ventes Totales par Heure") +
+  theme_minimal()
+
+# Afficher le graphique
+print(p)
+  </code>
+</div>
+
+<div class="col-12">
+  <img src="img/ventes_par_heure.png" alt="graphe des ventes totales, des abonnés et des non abonnés par le temps 'weather' - issam laouane data analyst engineer scientist" loading="lazy">
+</div>
+<p class="about-pro">
+  <br>
+On voit 2 pics de ventes un le matin vers <span>8h</span> et l'autre le soir vers <span>17h</span><br>
+</p>
+
+
+
+
+
 
 
 <p class="about-pro">
