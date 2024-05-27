@@ -768,7 +768,7 @@ transform: scale(1.4);
     background-position: center center;
     background-size: 150%;
   background-repeat: no-repeat;
-    background-image: url('img/bioobeldi.jpg');
+    background-image: url('img/logo-taghazit.png');
     box-shadow: 0 0 0 4px rgba(255,255,255,.1);
     transition: opacity .2s, border-radius .2s, box-shadow .2s;
     transition-timing-function: ease-out;
