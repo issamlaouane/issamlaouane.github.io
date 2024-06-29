@@ -778,7 +778,29 @@ transform: scale(1.4);
     border-radius: 30%;
     box-shadow: 0 0 0 20px rgba(255,255,255,.1);
 transform: scale(1.4);
-}	  
+}
+.hover-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #FFF;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Positionner au-dessus de l'élément */
+    left: 50%;
+    margin-left: -100px; /* Centrer l'info-bulle */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.link-to-portfolio:hover .hover-text,
+.link-to-shop:hover .hover-text {
+    visibility: visible;
+    opacity: 1;
+}
 .about-pro{
   color: whitesmoke;
 }
