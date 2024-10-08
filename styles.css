@@ -54,6 +54,8 @@ div.section-center div.container div.col-12 div.col-12.text-center img.cv-photo 
 	
 	border-top-right-radius: 50%; 
 	border-bottom-left-radius:  50%; 
+	border-top-left-radius: 50%; 
+	border-bottom-right-radius:  50%;
 }
 /* Autres photos de la zone about me*/
 div.section-center div.container div.col-12 div.col-12 img.photo {
